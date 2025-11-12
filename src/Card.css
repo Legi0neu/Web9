@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: hsl(40, 98%, 82%);
+    --white-color: hsl(0, 0%, 100%);
+    --grey-color: hsl(0, 0%, 42%);
+    --black-color: hsl(0, 0%, 7%);
+}
+
+.card {
+    background-color: var(--white-color);
+    border: 1px solid var(--black-color);
+    border-radius: 1rem;
+    box-shadow: 7px 7px;
+    width: 100%;
+    max-width: 333px;
+    padding: 1rem;
+}
+
+.card__picture {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.card__img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.card__text {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 800;
+    background-color: var(--primary-color);
+    border-radius: 0.3rem;
+    letter-spacing: -0.01rem;
+    padding: 0.5em 1em;
+    width: fit-content;
+    margin-bottom: 1rem;
+}
+
+.card__date {
+    font-size: 0.8rem;    
+}
+
+.card__text1-format {
+    margin: 1rem 0;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.card__text1-format:hover {
+    color: var(--primary-color);
+}
+
+.card__text2 {
+    color: var(--grey-color);
+    font-weight: 400;
+    line-height: 1.5rem;
+    letter-spacing: -0.01rem;
+    margin-bottom: 1rem;
+}
+
+.card__person {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.card__person__img {
+    display: block;
+    width: 30px;
+}
+
+.card__person__name {
+    margin-left: 0.8rem;
+    font-size: 0.9rem;
+    font-weight: 800;
+}
